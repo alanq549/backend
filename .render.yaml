@@ -1,0 +1,2 @@
+envVars:
+  JAVA_HOME: "/opt/render/project/.render/java/jdk"

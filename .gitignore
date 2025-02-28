@@ -1,0 +1,24 @@
+# Archivos de Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/
+node_modules/
+
+# Configuración del IDE
+*.iml
+.idea/
+.vscode/
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de credenciales (no subas claves ni credenciales)
+.env
