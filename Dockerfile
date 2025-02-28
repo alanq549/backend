@@ -1,6 +1,12 @@
 # Usa una imagen base con OpenJDK 21
 FROM openjdk:21-jdk-slim
 
+# Establece la variable JAVA_HOME
+ENV JAVA_HOME=/usr/local/openjdk-21
+
+# Añade JAVA_HOME al PATH
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
+
 # Establece el directorio de trabajo en el contenedor
 WORKDIR /app
 
@@ -17,4 +23,4 @@ RUN ./mvnw clean package
 EXPOSE 8080
 
 # Comando para iniciar la aplicación
-CMD ["java", "-jar", "target/tu-aplicacion.jar"]
+CMD ["java", "-jar", "target/backend-0.0.1-SNAPSHOT.jar"]
